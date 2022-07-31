@@ -1,4 +1,5 @@
 .home-page-content{
     max-height: 100%;
-    max-width: 100%;    
+    max-width: 100%; 
+    justify-self: center;
 }

@@ -4,4 +4,14 @@
 
 .navmod{
     background-color: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.navbar-brand{
+    font-weight: 700;   
+}
+
+.nav-item li a{
+    padding: 10px;
 }
