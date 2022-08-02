@@ -6,7 +6,7 @@ nav{
 }
 
 nav ul li{
-    padding: 15px;
+    padding: 40px;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 15px;
@@ -23,7 +23,7 @@ nav ul li a{
     
 }
 
-/* nav ul li a:after{
+nav ul li a:after{
 
   content: '';
   position: absolute;
@@ -41,28 +41,38 @@ nav ul li a{
 nav ul li a:hover:after{
     transform: scaleX(1);
     transform-origin: bottom left;
-  } */
+  }
 
 
 nav ul li a:hover{
     color:#909090;
 }
 
-.navbar-brand{
-    color: black;
-    font-weight: 600;
-    font-size: 2.25rem;
-    letter-spacing: 15px;
-    padding-bottom: 25px;
-    justify-content: center;
+.navbar-brand img{
+max-height: 100%;
+max-width: 100%;
+display: block;
     
+}
+.navbar-brand{
+    height: 100px;
 }
 
 nav ul li ul{
     list-style: none;
     position: absolute;
     background-color: black;
+    padding: 5px 0;
+    transform: translate(-21%,-2px) scaleY(0);
+    opacity: 0;
+    transition: all .2s ease;
 
+}
+
+
+nav ul li:hover ul{
+    transform: translate(-21%,-2px) scaleY(1);
+    opacity: 1;
 
 }
 
@@ -70,7 +80,14 @@ nav ul li ul a{
     text-decoration: none;
     color: #fff;
     display: block;
-    padding: 1em;
+    padding: .5em 1em;
     font-size: 12px;
-    
+    white-space: nowrap;
+}
+
+nav ul li ul li{
+    padding: 0;
+}
+nav ul li ul li:hover a {
+    color:#bebebe
 }
