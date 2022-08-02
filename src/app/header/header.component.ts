@@ -13,15 +13,15 @@ export class HeaderComponent implements OnInit {
     { path: '/members', name: 'memebrs',
       subItems:[
       {
-        path: '/current-committe',
+        path: '/members/current-committe',
         name: 'current committee'
       },
       {
-        path: '/general-members',
+        path: '/members/general-members',
         name: 'general members'
       },
       {
-        path: '/alumni',
+        path: '/members/alumni',
         name: 'alumni'
       },
 

@@ -14,6 +14,9 @@ import { AboutUsPageComponent } from './about-us-page/about-us-page.component';
 import{ RouterModule, Routes } from '@angular/router';
 import { MembersPageComponent } from './members-page/members-page.component';
 import { DonatePageComponent } from './donate-page/donate-page.component';
+import { CurrentCommitteePageComponent } from './members-page/current-committee-page/current-committee-page.component';
+import { GeneralMembersPageComponent } from './members-page/general-members-page/general-members-page.component';
+import { AlumniPageComponent } from './members-page/alumni-page/alumni-page.component';
 
 
 
@@ -22,7 +25,15 @@ const appRoutes : Routes = [
   {path: '', component: HomePageContentComponent},
   {path: 'gallery', component: GalleryPageComponent},
   {path: 'about-us', component: AboutUsPageComponent},
-  {path: 'members', component: MembersPageComponent},
+  {path: 'members', component: MembersPageComponent,
+    children:
+      [
+        {path: 'current-committe', component: CurrentCommitteePageComponent},
+        {path: 'general-members', component: GeneralMembersPageComponent},
+        {path: 'alumni', component: AlumniPageComponent}
+      ]
+
+  },
   {path: 'donate', component: DonatePageComponent},
 
 ]
@@ -38,6 +49,9 @@ const appRoutes : Routes = [
     GalleryPageComponent,
     MembersPageComponent,
     DonatePageComponent,
+    CurrentCommitteePageComponent,
+    GeneralMembersPageComponent,
+    AlumniPageComponent,
 
   ],
   imports: [
