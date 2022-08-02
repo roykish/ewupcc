@@ -11,13 +11,15 @@ import { HomePageContentComponent } from './home-page/home-page-content/home-pag
 import { GalleryPageComponent } from './gallery-page/gallery-page.component';
 import { AboutUsPageComponent } from './about-us-page/about-us-page.component';
 import{ RouterModule, Routes } from '@angular/router';
+import { CurrentCommitteePageComponent } from './current-committee-page/current-committee-page.component';
 
 
 
 const appRoutes : Routes = [
   {path: '', component: HomePageContentComponent},
   {path: 'gallery', component: GalleryPageComponent},
-  {path: 'about-us', component: AboutUsPageComponent}
+  {path: 'about-us', component: AboutUsPageComponent},
+  {path: 'current-committee', component: CurrentCommitteePageComponent}
 ]
 
 
