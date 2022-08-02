@@ -9,9 +9,12 @@ export class HeaderComponent implements OnInit {
 
   navItems = [
     { path: '/', name: 'home' },
-    { path: '/about-us', name: 'about us' },
     { path: '/gallery', name: 'gallery' },
-    { path: '/current-committee', name: 'current committee' }
+    { path: '/current-committee', name: 'current committee' },
+    { path: '/about-us', name: 'about us' },
+    { path: '/about-us', name: 'donate' }
+
+    
 
   ]
 

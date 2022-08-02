@@ -1,6 +1,7 @@
 nav{
     background: #fff;
     padding: 30px 100px;
+    align-items: center;
 }
 
 nav ul li{
@@ -8,14 +9,50 @@ nav ul li{
     text-transform: uppercase;
     font-weight: 500;
     font-size: 15px;
+    justify-content: center;
     
 }
 
 nav ul li a{
     color: black;
     letter-spacing: 2px;
+    display: inline-block;
+    position: relative;
+    
 }
+
+nav ul li a:after{
+
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+    
+}
+
+nav ul li a:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
+
 
 nav ul li a:hover{
     color:#909090;
+}
+
+.navbar-brand{
+    color: black;
+    font-weight: 600;
+    font-size: 2.25rem;
+    letter-spacing: 15px;
+    padding-bottom: 25px;
+    justify-content: center;
 }
