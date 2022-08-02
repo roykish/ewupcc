@@ -2,6 +2,7 @@ nav{
     background: #fff;
     padding: 30px 100px;
     align-items: center;
+
 }
 
 nav ul li{
@@ -10,6 +11,7 @@ nav ul li{
     font-weight: 500;
     font-size: 15px;
     justify-content: center;
+    position: relative;
     
 }
 
@@ -55,4 +57,24 @@ nav ul li a:hover{
     letter-spacing: 15px;
     padding-bottom: 25px;
     justify-content: center;
+    
+}
+
+
+nav ul li ul{
+    list-style: none;
+    position: absolute;
+    background-color: black;
+
+
+}
+
+
+
+nav ul li ul a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 1em;
+    
 }

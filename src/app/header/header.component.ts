@@ -10,12 +10,24 @@ export class HeaderComponent implements OnInit {
   navItems = [
     { path: '/', name: 'home' },
     { path: '/gallery', name: 'gallery' },
-    { path: '/current-committee', name: 'current committee' },
+    { path: '/members', name: 'memebrs',
+      subItems:[
+      {
+        path: '/current-committe',
+        name: 'current committee'
+      },
+      {
+        path: '/general-members',
+        name: 'general members'
+      },
+      {
+        path: '/alumni',
+        name: 'alumni'
+      },
+
+    ] },
     { path: '/about-us', name: 'about us' },
-    { path: '/about-us', name: 'donate' }
-
-    
-
+    { path: '/donate', name: 'donate' }
   ]
 
   constructor() { }
