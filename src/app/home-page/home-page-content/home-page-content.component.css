@@ -3,3 +3,14 @@
     max-width: 100%; 
     justify-self: center;
 }
+
+.bg{
+    position: absolute;
+    max-height: 100%;
+    max-width: 100%;
+    z-index: -1;
+    top: 0;
+}
+.bg img{
+    background-size: auto;
+}

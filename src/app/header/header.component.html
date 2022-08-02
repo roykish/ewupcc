@@ -7,13 +7,13 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav justify-content-end">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" [routerLink]="['/']">Home</a>
+            <a class="nav-link active" aria-current="page" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['/']">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/gallery']">Gallery</a>
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/gallery']">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/about-us']">About Us</a>
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/about-us']">About Us</a>
           </li>
         </ul>
       </div>

@@ -1,5 +1,5 @@
 *{
-    color: black;
+    color: white;
 }
 
 .navmod{
@@ -10,5 +10,8 @@
 
 .navbar-brand{
     font-weight: 700;
-    color: brown; 
+    
+}
+.navbar{
+    background-color: transparent
 }
