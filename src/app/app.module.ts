@@ -18,6 +18,7 @@ import { CurrentCommitteePageComponent } from './members-page/current-committee-
 import { GeneralMembersPageComponent } from './members-page/general-members-page/general-members-page.component';
 import { AlumniPageComponent } from './members-page/alumni-page/alumni-page.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +32,8 @@ import { AlumniPageComponent } from './members-page/alumni-page/alumni-page.comp
     CurrentCommitteePageComponent,
     GeneralMembersPageComponent,
     AlumniPageComponent,
-    AboutUsPageComponent
+    AboutUsPageComponent,
+
   ],
   imports: [
     BrowserModule,
