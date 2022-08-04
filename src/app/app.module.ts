@@ -19,6 +19,9 @@ import { GeneralMembersPageComponent } from './members-page/general-members-page
 import { AlumniPageComponent } from './members-page/alumni-page/alumni-page.component';
 import { ImageDetailsComponent } from './gallery-page/image-details/image-details.component';
 
+import {MatSelectModule} from '@angular/material/select';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 
 @NgModule({
@@ -42,6 +45,8 @@ import { ImageDetailsComponent } from './gallery-page/image-details/image-detail
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatSelectModule,
+    MatFormFieldModule
 
   ],
   providers: [],

@@ -53,4 +53,15 @@
 .page-link{
     color: black;
 }
+.form-select{
+    max-width: 10%;
+    max-height: 36%;
+    border-color: transparent;
+    margin-top: 5px;
+}
+
+.form-select:focus-visible{
+    border-color: transparent;
+}
+
 
