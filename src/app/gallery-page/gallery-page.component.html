@@ -1,10 +1,9 @@
-<html>
-  <body>
+
+
     <div class="container">
-      <a href="https://source.unsplash.com/600x600/?sig=1" data-lightbox="homePortfolio">
-        <img src="https://source.unsplash.com/600x600/?sig=1"/>
-      </a>
-      
+      <a [href]="imageUrl" data-lightbox="homePortfolio">
+        <img [src]="imageUrl"/>
+      </a>      
       <a href="https://source.unsplash.com/600x800/?sig=12" data-lightbox="homePortfolio" class="vertical">
         <img src="https://source.unsplash.com/600x800/?sig=12"/>
       </a>
@@ -73,5 +72,21 @@
         <img src="https://source.unsplash.com/600x800/?sig=307"/>
       </a>
     </div>
-  </body>
-</html>
+
+    <div aria-label="Page navigation example pagination">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+    </div>
+
+
+
+

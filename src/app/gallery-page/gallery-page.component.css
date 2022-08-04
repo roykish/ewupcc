@@ -43,3 +43,14 @@
     grid-column: span 2;
     grid-row: span 2;
   }
+
+  .pagination{
+    padding-bottom: 50px;
+    position: relative;
+    margin-top: 25px;
+    
+  }
+.page-link{
+    color: black;
+}
+

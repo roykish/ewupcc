@@ -17,6 +17,8 @@ import { DonatePageComponent } from './donate-page/donate-page.component';
 import { CurrentCommitteePageComponent } from './members-page/current-committee-page/current-committee-page.component';
 import { GeneralMembersPageComponent } from './members-page/general-members-page/general-members-page.component';
 import { AlumniPageComponent } from './members-page/alumni-page/alumni-page.component';
+import { ImageDetailsComponent } from './gallery-page/image-details/image-details.component';
+
 
 
 @NgModule({
@@ -33,6 +35,7 @@ import { AlumniPageComponent } from './members-page/alumni-page/alumni-page.comp
     GeneralMembersPageComponent,
     AlumniPageComponent,
     AboutUsPageComponent,
+    ImageDetailsComponent,
 
   ],
   imports: [

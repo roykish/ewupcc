@@ -12,4 +12,7 @@ export class GalleryPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  imageUrl : string = 'https://source.unsplash.com/600x600/?sig=1';
+  
+  
 }
