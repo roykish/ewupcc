@@ -12,12 +12,12 @@
 </form> -->
 <div class="container filter-nav">
     <div class="filter">
-        <select class="form-select form-select-sm mb-3 shadow-none " aria-label=".form-select-lg example">
+        <select class="form-select form-select-sm shadow-none " aria-label=".form-select-lg example">
             <option selected>Years</option>
             <option value="{{year.viewValue}}" *ngFor="let year of years" [value]="year.value" >{{year.viewValue}}</option>
           </select>
     
-          <select class="form-select form-select-sm mb-0 shadow-none" aria-label=".form-select-lg example">
+          <select class="form-select form-select-sm shadow-none" aria-label=".form-select-lg example">
             <option selected>Filter</option>
             <option value="{{filter.viewValue}}" *ngFor="let filter of filter" [value]="filter.value" >{{filter.viewValue}}</option>
           </select>

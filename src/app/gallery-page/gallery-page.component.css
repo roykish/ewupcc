@@ -58,15 +58,18 @@
     max-height: 36%;
     border-color: transparent;
     margin-top: 5px;
+    border: 1px solid rgba(0,0,0,.2);
+    
 }
 
-.form-select:focus-visible{
+/* .form-select:focus-visible{
     border-color: transparent;
-}
+} */
 
 .filter{
     display: flex;
     max-height: 80px;
+    gap:5px;
 }
 
 .filter-nav{
