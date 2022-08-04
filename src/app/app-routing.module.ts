@@ -16,6 +16,7 @@ const appRoutes : Routes = [
   {path: 'members', component: MembersPageComponent,
     children:
       [
+        {path: '', component: GeneralMembersPageComponent},
         {path: 'current-committe', component: CurrentCommitteePageComponent},
         {path: 'general-members', component: GeneralMembersPageComponent},
         {path: 'alumni', component: AlumniPageComponent}
