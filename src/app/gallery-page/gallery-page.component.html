@@ -10,11 +10,23 @@
       </mat-select>
     </mat-form-field>
 </form> -->
-<div class="container">
-    <select class="form-select form-select-lg mb-3 shadow-none" aria-label=".form-select-lg example">
-        <option selected>Years</option>
-        <option value="{{year.viewValue}}" *ngFor="let year of years" [value]="year.value" >{{year.viewValue}}</option>
-      </select>
+<div class="container filter-nav">
+    <div class="filter">
+        <select class="form-select form-select-sm mb-3 shadow-none " aria-label=".form-select-lg example">
+            <option selected>Years</option>
+            <option value="{{year.viewValue}}" *ngFor="let year of years" [value]="year.value" >{{year.viewValue}}</option>
+          </select>
+    
+          <select class="form-select form-select-sm mb-0 shadow-none" aria-label=".form-select-lg example">
+            <option selected>Filter</option>
+            <option value="{{filter.viewValue}}" *ngFor="let filter of filter" [value]="filter.value" >{{filter.viewValue}}</option>
+          </select>
+<!-- 
+          <form class="form-inline justify-content-end shadow-none">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          </form> -->
+    </div>
+
 </div>
 
 
