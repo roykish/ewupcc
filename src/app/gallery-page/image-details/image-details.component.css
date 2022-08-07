@@ -1,5 +1,5 @@
 .example-card {
-     max-width: 400px;
+     max-width: 1024px;
      height: 90vh;
      box-shadow: initial;
      
@@ -13,4 +13,8 @@
 
   .mat-card-content{
     padding-bottom: 60px;
+  }
+
+  .mat-card-header{
+    justify-content: center
   }

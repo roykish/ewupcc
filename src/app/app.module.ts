@@ -23,6 +23,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatDialogModule} from '@angular/material/dialog';
 import { MatCardModule } from '@angular/material/card';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 
 
@@ -42,6 +43,7 @@ import { MatCardModule } from '@angular/material/card';
     AlumniPageComponent,
     AboutUsPageComponent,
     ImageDetailsComponent,
+ 
 
   ],
   imports: [
@@ -51,7 +53,8 @@ import { MatCardModule } from '@angular/material/card';
     MatSelectModule,
     MatFormFieldModule,
     MatDialogModule,
-    MatCardModule
+    MatCardModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
