@@ -21,6 +21,9 @@ import { ImageDetailsComponent } from './gallery-page/image-details/image-detail
 
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatDialogModule} from '@angular/material/dialog';
+import { MatCardModule } from '@angular/material/card';
+
 
 
 
@@ -46,8 +49,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSelectModule,
-    MatFormFieldModule
-
+    MatFormFieldModule,
+    MatDialogModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

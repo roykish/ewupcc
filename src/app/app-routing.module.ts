@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutUsPageComponent } from './about-us-page/about-us-page.component';
 import { DonatePageComponent } from './donate-page/donate-page.component';
 import { GalleryPageComponent } from './gallery-page/gallery-page.component';
+import { ImageDetailsComponent } from './gallery-page/image-details/image-details.component';
 import { HomePageContentComponent } from './home-page/home-page-content/home-page-content.component';
 import { AlumniPageComponent } from './members-page/alumni-page/alumni-page.component';
 import { CurrentCommitteePageComponent } from './members-page/current-committee-page/current-committee-page.component';
@@ -22,7 +23,8 @@ const appRoutes : Routes = [
         {path: 'alumni', component: AlumniPageComponent}
       ]
   },
-  {path: 'donate', component: DonatePageComponent}
+  {path: 'donate', component: DonatePageComponent},
+  {path: 'pageName', component: ImageDetailsComponent}
 
 ]
 

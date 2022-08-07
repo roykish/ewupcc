@@ -21,32 +21,14 @@
             <option selected>Filter</option>
             <option value="{{filter.viewValue}}" *ngFor="let filter of filter" [value]="filter.value" >{{filter.viewValue}}</option>
           </select>
-<!-- 
-          <form class="form-inline justify-content-end shadow-none">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          </form> -->
     </div>
 
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <div class="container">
-      <a [href]="imageUrl" data-lightbox="homePortfolio">
-        <img [src]="imageUrl"/>
+      <a class="image-grid" data-lightbox="homePortfolio" (click)="openDialog()">
+        <img [src]="imageUrl" />
       </a>      
       <a href="https://source.unsplash.com/600x800/?sig=12" data-lightbox="homePortfolio" class="vertical">
         <img src="https://source.unsplash.com/600x800/?sig=12"/>

@@ -76,3 +76,7 @@
     max-height: 60px;
 }
 
+.image-grid{
+  cursor: pointer;
+}
+
