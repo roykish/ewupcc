@@ -38,7 +38,7 @@
         <img src="https://source.unsplash.com/800x600/?sig=71"/>
       </a>
       
-    <a data-lightbox="homePortfolio" [ngClass]="imageGridStyle">
+    <a data-lightbox="homePortfolio" [ngClass]="{'big': rand <= 3, 'vertical':rand >3 && rand <=7, 'horizontal': rand >=8}">
         <img src="https://source.unsplash.com/600x600/?sig=40"/>
       </a>
       

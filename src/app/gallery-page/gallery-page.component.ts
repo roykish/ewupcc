@@ -20,6 +20,7 @@ export class GalleryPageComponent implements OnInit {
   selectedFilter: string = '';
   //imageGridStyleList = ['big', 'horizontal', 'vertical'];
   imageGridStyle : string = '';
+  rand:number = 0;
 
   years  = [
     {value: '2013', viewValue: '2013'},
@@ -52,20 +53,20 @@ export class GalleryPageComponent implements OnInit {
     let min = 1;
     let max = 9;
     let difference = max-min;
-    let rand = Math.random();
-    rand = Math.floor( rand * difference);
-    rand = rand + min;
-    if(rand <= 3){
-      this.imageGridStyle = 'horizontal';
-    }
-    else if(rand > 3 && rand <= 7){
-      this.imageGridStyle = 'big';
-    }
-    else{
-      this.imageGridStyle = 'vertical';
-    }
-    console.log(this.imageGridStyle);
-    return this.imageGridStyle;
+    this.rand = Math.random();
+    this.rand = Math.floor( this.rand * difference);
+    this.rand = this.rand + min;
+    // if(rand <= 3){
+    //   this.imageGridStyle = 'horizontal';
+    // }
+    // else if(rand > 3 && rand <= 7){
+    //   this.imageGridStyle = 'big';
+    // }
+    // else{
+    //   this.imageGridStyle = 'vertical';
+    // }
+    // console.log(this.imageGridStyle);
+    return this.rand;
   }
   
 
