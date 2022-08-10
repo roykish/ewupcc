@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject, Inject } from '@angular/core';
+import {MAT_DIALOG_DATA} from '@angular/material/dialog';
 
 
 @Component({
@@ -8,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ImageDetailsComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(@Inject(MAT_DIALOG_DATA) public data: {imgUrl : string, title : string}) { }
 
   ngOnInit(): void {
+     
   }
+ 
 
 }

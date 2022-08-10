@@ -12,9 +12,11 @@
   }
 
   .mat-card-content{
+    
     padding-bottom: 60px;
   }
 
   .mat-card-header{
     justify-content: center
   }
+

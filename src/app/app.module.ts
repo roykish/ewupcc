@@ -24,6 +24,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatDialogModule} from '@angular/material/dialog';
 import { MatCardModule } from '@angular/material/card';
 import {NgxPaginationModule} from 'ngx-pagination';
+import {MatGridListModule} from '@angular/material/grid-list';
+
 
 
 
@@ -54,7 +56,8 @@ import {NgxPaginationModule} from 'ngx-pagination';
     MatFormFieldModule,
     MatDialogModule,
     MatCardModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

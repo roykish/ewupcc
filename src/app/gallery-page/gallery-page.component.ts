@@ -3,9 +3,6 @@ import { MatDialog } from '@angular/material/dialog';
 import {Router} from '@angular/router';
 import { ImageDetailsComponent } from './image-details/image-details.component';
 
-
-
-
 @Component({
   selector: 'app-gallery-page',
   templateUrl: './gallery-page.component.html',
@@ -15,106 +12,60 @@ import { ImageDetailsComponent } from './image-details/image-details.component';
 
 export class GalleryPageComponent implements OnInit {
 
-  imageUrl : string = 'https://source.unsplash.com/600x600/?sig=1';
-  selectedyear: string = '';
-  selectedFilter: string = '';
-  //imageGridStyleList = ['big', 'horizontal', 'vertical'];
-  imageGridStyle : string = '';
-  rand:number = 0;
+  selectedValue: string = '';
+  selectedCar: string='';
+  screenWidth: number = 0;
 
-  years  = [
+  yearList = [
+    {value: '2011', viewValue: '2011'},
+    {value: '2012', viewValue: '2012'},
     {value: '2013', viewValue: '2013'},
-    {value: '2014', viewValue: '2014'},
-    {value: '2015', viewValue: '2015'},
   ];
 
-  filter  = [
-    {value: 'photo', viewValue: 'Photos'},
-    {value: 'video', viewValue: 'Videos'}
-
+  filterTypeList = [
+    {value: 'image', viewValue: 'Image'},
+    {value: 'video', viewValue: 'Video'},
   ];
 
-  constructor(private route: Router, public dialog: MatDialog) { }
+  listOfImageLinks =[
+    'randomrandomrandom',
+    'randomrandomrandom',
+    'randomrandomrandom',
+    'randomrandomrandom'
+    
+  ]
+
+  tilesForWideScreen = [
+    { cols: 2, rows: 2, imgUrl: 'https://picsum.photos/300/300', title:'hello'},
+    { cols: 1, rows: 1, imgUrl: 'https://picsum.photos/300/300' , title:'roy'},
+    { cols: 1, rows: 1, imgUrl: 'https://picsum.photos/300/300', title:'hello'},
+    { cols: 1, rows: 1, imgUrl: 'https://picsum.photos/300/300', title:'hello'},
+    { cols: 1, rows: 1, imgUrl: 'https://picsum.photos/300/300', title:'hello'},
+    { cols: 1, rows: 1, imgUrl: 'https://picsum.photos/300/300', title:'hello'},
+    { cols: 1, rows: 1, imgUrl: 'https://picsum.photos/300/300', title:'hello'},
+    { cols: 1, rows: 1, imgUrl: 'https://picsum.photos/300/300', title:'hello'},
+    { cols: 1, rows: 1, imgUrl: 'https://picsum.photos/300/300', title:'hello'},
+    { cols: 2, rows: 1, imgUrl: 'https://picsum.photos/300/300', title:'hello'},
+    { cols: 2, rows: 1, imgUrl: 'https://picsum.photos/300/300', title:'hello'},
+    { cols: 1, rows: 2, imgUrl: 'https://picsum.photos/300/300', title:'hello'},
+    { cols: 2, rows: 2, imgUrl: 'https://picsum.photos/300/300', title:'hello'},
+    { cols: 1, rows: 1, imgUrl: 'https://picsum.photos/300/300', title:'hello'},
+    { cols: 1, rows: 1, imgUrl: 'https://picsum.photos/300/300', title:'hello'},
+  ];
+
+
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
-  }
-
-  openDialog(){
-    const dialogRef = this.dialog.open(ImageDetailsComponent);
+    this.screenWidth = screen.width;
 
   }
 
-  openDialogA(imagelink: string){
-      console.log(imagelink);
-      
-  }
-
-  generateRandomValueForDynamicPhotoGrid(){
-    let min = 1;
-    let max = 9;
-    let difference = max-min;
-    this.rand = Math.random();
-    this.rand = Math.floor( this.rand * difference);
-    this.rand = this.rand + min;
-    // if(rand <= 3){
-    //   this.imageGridStyle = 'horizontal';
-    // }
-    // else if(rand > 3 && rand <= 7){
-    //   this.imageGridStyle = 'big';
-    // }
-    // else{
-    //   this.imageGridStyle = 'vertical';
-    // }
-    // console.log(this.imageGridStyle);
-    return this.rand;
-  }
-  
-
- 
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   openDialog(imgUrl:string, title:string){
+    const dialogRef = this.dialog.open(ImageDetailsComponent, {data: {imgUrl, title}});  
+   }
 
 }
 
 
-
-
-function generateRandomValueForDynamicPhotoGrid() {
-  throw new Error('Function not implemented.');
-}
 
