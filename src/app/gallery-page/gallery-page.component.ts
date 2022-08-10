@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import {Router} from '@angular/router';
 import { ImageDetailsComponent } from './image-details/image-details.component';
 
 @Component({
@@ -31,13 +30,12 @@ export class GalleryPageComponent implements OnInit {
     'randomrandomrandom',
     'randomrandomrandom',
     'randomrandomrandom',
-    'randomrandomrandom'
-    
+    'randomrandomrandom'    
   ]
 
   tilesForWideScreen = [
     { cols: 2, rows: 2, imgUrl: 'https://picsum.photos/300/300', title:'hello'},
-    { cols: 1, rows: 1, imgUrl: 'https://picsum.photos/300/300' , title:'roy'},
+    { cols: 1, rows: 1, imgUrl: 'https://picsum.photos/300/300', title:'roy'},
     { cols: 1, rows: 1, imgUrl: 'https://picsum.photos/300/300', title:'hello'},
     { cols: 1, rows: 1, imgUrl: 'https://picsum.photos/300/300', title:'hello'},
     { cols: 1, rows: 1, imgUrl: 'https://picsum.photos/300/300', title:'hello'},
@@ -45,12 +43,13 @@ export class GalleryPageComponent implements OnInit {
     { cols: 1, rows: 1, imgUrl: 'https://picsum.photos/300/300', title:'hello'},
     { cols: 1, rows: 1, imgUrl: 'https://picsum.photos/300/300', title:'hello'},
     { cols: 1, rows: 1, imgUrl: 'https://picsum.photos/300/300', title:'hello'},
-    { cols: 2, rows: 1, imgUrl: 'https://picsum.photos/300/300', title:'hello'},
-    { cols: 2, rows: 1, imgUrl: 'https://picsum.photos/300/300', title:'hello'},
-    { cols: 1, rows: 2, imgUrl: 'https://picsum.photos/300/300', title:'hello'},
+    { cols: 2, rows: 2, imgUrl: 'https://picsum.photos/300/300', title:'hello'},
+    { cols: 2, rows: 2, imgUrl: 'https://picsum.photos/300/300', title:'hello'},
+    { cols: 1, rows: 1, imgUrl: 'https://picsum.photos/300/300', title:'hello'},
     { cols: 2, rows: 2, imgUrl: 'https://picsum.photos/300/300', title:'hello'},
     { cols: 1, rows: 1, imgUrl: 'https://picsum.photos/300/300', title:'hello'},
     { cols: 1, rows: 1, imgUrl: 'https://picsum.photos/300/300', title:'hello'},
+    { cols: 1, rows: 1, imgUrl: 'https://picsum.photos/300/300', title:'hello'}
   ];
 
 
@@ -62,7 +61,8 @@ export class GalleryPageComponent implements OnInit {
   }
 
    openDialog(imgUrl:string, title:string){
-    const dialogRef = this.dialog.open(ImageDetailsComponent, {data: {imgUrl, title}});  
+    const dialogRef = this.dialog.open(ImageDetailsComponent, {data: {imgUrl, title}});
+
    }
 
 }

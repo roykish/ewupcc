@@ -20,18 +20,23 @@
 
 
 <div class="container">
-  <mat-grid-list cols="4" rowHeight="150px">
+  <mat-grid-list cols="4" rowHeight="150px">   
+      <ng-template  [ngIf]="screenWidth > 768 && tilesForWideScreen.length > 1">
+        <mat-grid-tile
+          *ngFor="let tile of tilesForWideScreen"
+          [colspan]="tile.cols"
+          [rowspan]="tile.rows"> 
+          <a target="_blank" rel="noopener noreferrer" style=" width:100%"  (click)="openDialog(tile.imgUrl, tile.title)">
+            <img id="img" [src]="tile.imgUrl" alt="" srcset="" style="object-fit: cover; width:100%">
+          </a>
+        </mat-grid-tile>
+      </ng-template>
 
-    <ng-template [ngIf]="screenWidth > 1000 && tilesForWideScreen.length > 1">
-      <mat-grid-tile
-        *ngFor="let tile of tilesForWideScreen"
-        [colspan]="tile.cols"
-        [rowspan]="tile.rows"> 
-        <a target="_blank" rel="noopener noreferrer" style=" width:100%"  (click)="openDialog(tile.imgUrl, tile.title)">
-          <img id="img" [src]="tile.imgUrl" alt="" srcset="" style="object-fit: cover; width:100%">
-        </a>
-      </mat-grid-tile>
-    </ng-template>
+
+
+
+
+
 
   </mat-grid-list>
 
