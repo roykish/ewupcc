@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import {Router} from '@angular/router';
 import { ImageDetailsComponent } from './image-details/image-details.component';
 
 @Component({
@@ -37,7 +36,7 @@ export class GalleryPageComponent implements OnInit {
 
   tilesForWideScreen = [
     { cols: 2, rows: 2, imgUrl: 'https://picsum.photos/300/300', title:'hello'},
-    { cols: 1, rows: 1, imgUrl: 'https://picsum.photos/300/300' , title:'roy'},
+    { cols: 1, rows: 1, imgUrl: 'https://picsum.photos/300/300', title:'roy'},
     { cols: 1, rows: 1, imgUrl: 'https://picsum.photos/300/300', title:'hello'},
     { cols: 1, rows: 1, imgUrl: 'https://picsum.photos/300/300', title:'hello'},
     { cols: 1, rows: 1, imgUrl: 'https://picsum.photos/300/300', title:'hello'},
